@@ -1,0 +1,8 @@
+In order to include the method proposed in 
+J.Ventura et al.'s "An Efficient Minimal Solution for Multi-Camera Motion" ICCV 2015 paper into comparison,
+one needs to install and compile the C++ library 'multi-camera-motion' available from the J. Ventura's website, and
+then compile our mex wrapper for this library located in +polyslv/approx_pose_mex.cpp by a following command:
+mex approx_pose_mex.cpp -I/usr/include/eigen3 -lmulti-camera-motion -L.../ventura/multi-camera-motion/cmake-build-debug
+where the paths to the library headers and binary file should be substituted where appropriate. 
+
+After this, please set is_mex = true in the beginning of the test scripts.

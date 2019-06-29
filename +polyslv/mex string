@@ -1,0 +1,2 @@
+mex approx_pose_mex.cpp -I/usr/include/eigen3 -lmulti-camera-motion -L/home/alexander/materials/sego/ventura/multi-camera-motion/cmake-build-debug
+
